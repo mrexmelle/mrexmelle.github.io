@@ -15,7 +15,7 @@
 	3. Untuk mengirimkan pesan sapaan saat pengguna menjadikan akun anda temannya, pilih "Allow" untuk pilihan “Greeting Message”.
 
 ####Integrasi Dengan Messaging API
-1. Buka [LINE Developers](https://developers.line.me/) dan pilih **Channels** pada pojok kanan atas halaman.
+1. Buka [LINE Business Center](https://business.line.me/en/) pilih **Accounts** dan pilih **LINE Developers** di sebelah kanan **Messaging API** pada akun anda yang telah diintegrasikan dengan Messaging API.
 2. Pilih channel yang anda ingin integrasi dengan Messaging API.
 3. Pilih menu "Basic information" pada menu disamping dan klik "Edit" di bagian bawah halaman.
 4. Masukkan alamat webhook anda, dan klik "Save"

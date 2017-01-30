@@ -132,4 +132,4 @@ Template pesan untuk reg:
 
 ### Tautan ke git repository ###
 
-[bot-phonebook](https://github.com/line-indonesia/bot-phonebook)
+[bot-phonebook](https://github.com/mrexmelle/bot-phonebook)

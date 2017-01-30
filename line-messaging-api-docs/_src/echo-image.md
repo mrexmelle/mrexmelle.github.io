@@ -82,4 +82,4 @@ com.linecorp.channel_access_token=<your_channel_access_token>
 
 ### Tautan ke git repository ###
 
-[echo-image](https://github.com/line-indonesia/echo-image)
+[echo-image](https://github.com/mrexmelle/echo-image)
