@@ -1,7 +1,7 @@
 
 MD_FILES = $(shell find *.md)
 HTML_FILES = $(MD_FILES:%.md=../%.html)
-IMG_DIR = ../_img
+IMG_DIR = ../img
 
 all: $(HTML_FILES) $(IMG_DIR)
 
@@ -11,5 +11,5 @@ clean:
 ../%.html: %.md
 	grip --export $< $@
 
-../_img: _img
-	cp -rf _img ../
+../img: img
+	cp -rf img ../img
