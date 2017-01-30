@@ -1,6 +1,6 @@
 #LINE Messaging API
 
-![MessAPI](_img/20160930132259.png)
+![MessAPI](img/20160930132259.png)
 
 Messaging API dapat membantu kamu untuk membuat sebuah bot yang berinteraksi dengan pengguna lewat LINE chats.
 
@@ -14,7 +14,7 @@ Messaging API dapat membantu kamu untuk membuat sebuah bot yang berinteraksi den
 6. **Leave API:** Meninggalkan grup atau room.
 
 ###Arsitektur:
-![Arch](https://developers.line.me/wp-content/uploads/2016/09/bottrial-fig1.png)
+![Arch](img/bottrial-fig1.png)
 
 
 ###Spesifikasi Umum:

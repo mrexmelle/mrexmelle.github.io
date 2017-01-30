@@ -1,6 +1,6 @@
 #Push message
 
-![pushrep](_img/msgapi-figure4.png)
+![pushrep](img/msgapi-figure4.png)
 
 Mengirim pesan ke pengguna, grup, atau room kapan pun.
 

@@ -1,6 +1,6 @@
 #Servis Pendukung
 
-![serv](_img/img-ea-enablement.jpg)
+![serv](img/img-ea-enablement.jpg)
 
 LINE Messaging API merupakan sebuah antarmuka pemrograman aplikasi yang memungkinkan sebuah program untuk menerima pesan, mengirim dan membalas pesan, dan mendapatkan profil pengguna dari LINE Chat.
 

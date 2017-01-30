@@ -1,7 +1,7 @@
 # Heroku + Django
 Proyek ini akan menunjukkan cara untuk membuat sebuah aplikasi web dasar dengan menggunakan **Django Framework**. Sebagai tambahan, proyek ini juga akan melliputi cara untuk menjalankan proyek ini di **Heroku**.
 
-![Image of Django](_img/featured.jpg)
+![Image of Django](img/featured.jpg)
 
 ## Langkah Untuk Membuat
 

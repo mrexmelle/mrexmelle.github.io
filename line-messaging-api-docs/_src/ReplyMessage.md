@@ -1,6 +1,6 @@
 #Reply message
 
-![pushrep](_img/msgapi-figure4.png)
+![pushrep](img/msgapi-figure4.png)
 
 Menanggapi event dari pengguna, grup, dan room.
 

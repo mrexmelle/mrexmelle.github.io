@@ -43,7 +43,7 @@ Contoh buttons template message
 
 Buttons adalah template message dengan gambar, judul, teks, dan beberapa tombol aksi.
 
-![Gambar buttons template](_img/buttons.png)
+![Gambar buttons template](img/buttons.png)
 
 Label | Tipe | Deskripsi
 --- | --- | ---
@@ -85,7 +85,7 @@ Contoh confirm template message
 
 Template message dengan dua tombol aksi.
 
-![Gammbar confirm template](_img/confirm.png)
+![Gammbar confirm template](img/confirm.png)
 
 Field | Type | Description
 --- | --- | ---
@@ -155,7 +155,7 @@ Contoh carousel template message
 ```
 Template message dengan beberapa kolom yang dapat berputar seperti carousel.
 
-![Gambar carousel template](_img/carousel.png)
+![Gambar carousel template](img/carousel.png)
 
 Label | Tipe | Deskripsi
 --- | --- | ---
