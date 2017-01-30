@@ -1,5 +1,8 @@
 #LINE Messaging API
-Messaging API dapat membuat kamu untuk membuat sebuah bot yang berinteraksi dengan pengguna lewat LINE chats.
+
+![MessAPI](https://cdn-ak.f.st-hatena.com/images/fotolife/f/feedmatic/20160930/20160930132259.png)
+
+Messaging API dapat membantu kamu untuk membuat sebuah bot yang berinteraksi dengan pengguna lewat LINE chats.
 
 ###Komponen LINE Messaging API:
 
@@ -9,6 +12,10 @@ Messaging API dapat membuat kamu untuk membuat sebuah bot yang berinteraksi deng
 4. **Get Content API:** Mengambil gambar, video, atau audio yang dikirimkan oleh pengguna.
 5. **Get Profile API:** Mendapatkan informasi profil pengguna.
 6. **Leave API:** Meninggalkan grup atau room.
+
+###Arsitektur:
+![Arch](https://developers.line.me/wp-content/uploads/2016/09/bottrial-fig1.png)
+
 
 ###Spesifikasi Umum:
 * Limit Request: 

@@ -1,5 +1,7 @@
 #Integrasi Dengan LINE Messaging API
 
+![MessagingAPI](https://scdn.line-apps.com/n/_5/partner-center/img/lp/msgapi-figure2.png)
+
 ####Buat akun LINE@ dengan mengaktifkan Messaging API
 1. Buka [LINE Business Center](https://business.line.me/en/), pilih **Messaging API** di dalam kategori **Service** di bagian atas halaman. Pilih **Start Messaging API** atau **Start Developer Trial**.
 2. Masukkan informasi yang dibutuhkan untuk akun LINE@ anda yang baru. Pastikan informasi yang anda berikan.
