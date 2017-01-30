@@ -1,6 +1,6 @@
 #LINE Messaging API
 
-![MessAPI](https://cdn-ak.f.st-hatena.com/images/fotolife/f/feedmatic/20160930/20160930132259.png)
+![MessAPI](_img/20160930132259.png)
 
 Messaging API dapat membantu kamu untuk membuat sebuah bot yang berinteraksi dengan pengguna lewat LINE chats.
 

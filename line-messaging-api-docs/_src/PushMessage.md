@@ -1,6 +1,6 @@
 #Push message
 
-![pushrep](https://scdn.line-apps.com/n/_5/partner-center/img/lp/us/msgapi-figure4.png?v=1)
+![pushrep](_img/msgapi-figure4.png)
 
 Mengirim pesan ke pengguna, grup, atau room kapan pun.
 

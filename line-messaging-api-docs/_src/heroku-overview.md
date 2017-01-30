@@ -1,6 +1,6 @@
 # Heroku
 Heroku adalah PaaS (Platform as a Service) yang menyediakan layanan bagi para pengembang aplikasi web service untuk menempatkan aplikasi mereka di ruang publik agar semua orang dapat mengaksesnya.
-![Heroku](https://d3k90kvix375hb.cloudfront.net/assets/heroku-og-cad174838a49b266550809e29026ec9bc18e056dae8f9cf523ea4237379691f9.png)
+![Heroku](_img/heroku-og-cad174838a49b266550809e29026ec9bc18e056dae8f9cf523ea4237379691f9.png)
 
 
 ## Mengapa Heroku?
@@ -11,7 +11,7 @@ Heroku adalah PaaS (Platform as a Service) yang menyediakan layanan bagi para pe
 - Pemasangan aplikasi dilakukan lewat git. Heroku secara internal memiliki repository git untuk tiap service yang ditempatkan. Dengan demikian penempatan bisa dilakukan secara aman dan sejarah modifikasi terhadap proyek dapat terpantau.
 
 Berikut adalah arsitektur Heroku secara umum:
-![](https://content-static.upwork.com/blog/uploads/sites/3/2015/07/21081451/Heroku-2.png)
+![](_img/Heroku-2.png)
 
 ## Registrasi
 Registrasi dapat dilakukan di [sini](https://devcenter.heroku.com/).

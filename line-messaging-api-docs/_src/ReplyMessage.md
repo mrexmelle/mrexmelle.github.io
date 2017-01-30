@@ -1,6 +1,6 @@
 #Reply message
 
-![pushrep](https://scdn.line-apps.com/n/_5/partner-center/img/lp/us/msgapi-figure4.png?v=1)
+![pushrep](_img/msgapi-figure4.png)
 
 Menanggapi event dari pengguna, grup, dan room.
 
