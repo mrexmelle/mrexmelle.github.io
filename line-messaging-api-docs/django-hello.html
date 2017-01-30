@@ -125,28 +125,34 @@ urlpatterns = [
 <p>Modifikasi <code>views.py</code> anda menjadi</p>
 
 <pre lang="py"><code># hello/views.py
-from django.shortcuts import render
-from django.views.generic import TemplateView
 from django.http import HttpResponse
 from datetime import datetime
 # Create your views here.
 def hello(request):
+    # get name param
+    name = request.GET.get('name')
+    # compose head
+    head='&lt;head&gt;&lt;title&gt;Spring Hello&lt;/title&gt;&lt;/head&gt;';
+    # get time
+    hour = datetime.now().time().hour
+    greeting=''
+    if hour &gt;= 4 and hour &lt;= 10:
+        greeting = 'Good morning, {0}!'
+    elif hour &gt;= 11 and hour &lt;= 15:
+        greeting = 'Good day, {0}!'
+    elif hour &gt;= 16 and hour &lt;= 18:
+        greeting = 'Good afternoon, {0}!'
+    elif hour &gt;= 19 and hour &lt;= 22:
+        greeting = 'Good evening, {0}!'
+    else:
+        greeting = 'Good night, {0}!'
+    print hour
+    # compose body
+    body=('&lt;body&gt;'+greeting+'&lt;/body&gt;').format(name if name != None else 'hoo-man')
+    # compose html
+    html='&lt;html&gt;'+head+body+'&lt;/html&gt;'
+    return HttpResponse(html)
 
-name = request.GET.get('name')
-
-localHour = datetime.now().time().hour
-if localHour &gt;= 4 and localHour &lt;= 10:
-    greeting = "Good morning, {0}!".format(name)
-elif localHour &gt;= 11 and localHour &lt;= 15:
-    greeting = "Good day, {0}!".format(name)
-elif localHour &gt;= 16 and localHour &lt;= 18:
-    greeting = "Good afternoon, {0}!".format(name)
-elif localHour &gt;= 19 and localHour &lt;= 22:
-    greeting = "Good evening, {0}!".format(name)
-else:
-    greeting = "Good night, {0}!".format(name)
-
-return HttpResponse (greeting)
 </code></pre>
 </li>
 <li>
