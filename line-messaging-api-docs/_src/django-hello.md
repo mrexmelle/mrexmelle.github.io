@@ -1,63 +1,91 @@
-#django-hello
-Project ini akan memerlihatkan cara untuk membuat sebuah aplikasi web dasar dengan menggunakan **Django Framework**. Sebagai tambahan, project ini juga akan melliputi cara untuk menjalankan project ini di **Heroku**.
+# Heroku + Django
+Proyek ini akan menunjukkan cara untuk membuat sebuah aplikasi web dasar dengan menggunakan **Django Framework**. Sebagai tambahan, proyek ini juga akan melliputi cara untuk menjalankan proyek ini di **Heroku**.
 
-### Langkah Untuk Membuat
+## Langkah Untuk Membuat
 
-* Untuk menjalankan aplikasi Django, anda harus memiliki Python, Django, Virtual Environment dan Pip terinstal pada komputer anda.
-	* Menginstall python dengan **Homebrew**
-		`$ brew install python3`
-	* Menginstall virtual environment dengan **Pip**
-		`$ pip install virtualenv`<br>
-		Buat sebuah direktori untuk project anda, dan pindah ke direktori tersebut<br>
-		Aktifkan virtual environment pada direktori tersebut
-		`$ virtualenv -p /usr/local/bin/python3 env`
-		`$ source env/bin/activate`
-	* Menginstall Django dengan **Pip**
-		`(env) $ pip install django`
-* Membuat project django
-	`$ django-admin startproject django_hello`<br>
-	helloapp merupakan nama project, anda dapat mengganti nama ini sesuai kemauan anda
-* Pindah ke dalam direktori *django_hello*. Di dalam direktori ini akan ada *manage.py* dan sebuah direktori bernama *django_hello* juga. Di dalam direktori tersebut, terdapat pengaturan dari project ini dan rute dari project anda.
-* Buat aplikasi di dalam project anda
-	`$ python manage.py startapp hello`
-* Ubah `settings.py` yang terdapat pada direktori *django_hello/django_hello*
+* Untuk menjalankan aplikasi Django, anda harus memiliki `brew` dan `pip` untuk memasang `python` dan `Django` pada komputer anda.
 	
-	```py
+	* Silakhan ikuti petunjuk di URL ini untuk memasang `brew` pada komputer anda:
+
+		```url
+		http://brew.sh/
+		```
+	* Silakhan ikuti petunjuk di URL Ini untuk memasang `pip` pada komputer anda:
+		
+		```url
+		https://pip.pypa.io/en/latest/installing/#installing-with-get-pip-py
+		```
+
+	* Memasang `python` menggunakan `brew`
+		
+		```bash
+		$ brew install python
+		```
+		
+	* Memasang Django menggunakan `pip`
+
+		```bash
+		$ pip install django
+		```	
+		
+* Membuat proyek Django
+
+	Ketikkan perintah di bawah ini untuk membuat proyek bernama `django_hello`:
+	
+	```bash
+	$ django-admin startproject django_hello
+	```
+	
+	`django_hello` merupakan nama proyek, anda dapat mengganti nama ini sesuai kemauan anda.
+	
+* Masuk ke dalam direktori `django_hello`.
+
+	```bash
+	cd django_hello
+	```
+
+* Di dalam direktori ini akan ada file `manage.py` dan sebuah direktori bernama `django_hello` juga. Di dalam direktori tersebut, terdapat pengaturan dari projek ini.
+
+* Buat aplikasi `hello` di dalam proyek anda
+
+	```bash
+	$ python manage.py startapp hello
+	```
+	
+* Tambahkan aplikasi `hello` pada `settings.py` di bagian `INSTALLED_APPS` yang terdapat pada direktori `django_hello/django_hello`
+	
+	```python
 	# django_hello/settings.py
 	INSTALLED_APPS = [
-    	'django.contrib.admin',
-    	'django.contrib.auth',
-    	'django.contrib.contenttypes',
     	'django.contrib.sessions',
     	'django.contrib.messages',
     	'django.contrib.staticfiles',
     	'hello'
 	]
 	```
-* Ubah `urls.py` yang terdapat pada direktori *django_hello/django_hello*
+* Tambahkan rute ke aplikasi `hello` dengan mengubah setting `urlpatterns` di `urls.py` yang terdapat pada direktori `django_hello/django_hello`
 	
-	```py
+	```python
 	# django_hello/urls.py
 	from django.conf.urls import url, include
-	from django.contrib import admin
+
 	urlpatterns = [
-   		url(r'^admin/', admin.site.urls),
-    	url(r'^', include('hello.urls')),
+    	url(r'^hello', include('hello.urls')),
 	]
 	```
 * Buat `urls.py` di direktori *django_hello/hello*
 	
-	```py
+	```python
 	# hello/urls.py
 	from django.conf.urls import url
 	from howdy import views
 	urlpatterns = [
-   		 url(r'^hello$', views.hello, name='hello')
+   		 url(r'', views.hello, name='hello')
 	]
 	```
 * Modifikasi `views.py` anda menjadi
 	
-	```py
+	```python
     # hello/views.py
     from django.http import HttpResponse
     from datetime import datetime
@@ -101,10 +129,10 @@ Project ini akan memerlihatkan cara untuk membuat sebuah aplikasi web dasar deng
     Untuk menjalankan aplikasi yang anda buat, anda dapat mengakses:
     > http://localhost:8000/hello?name=<your_name>
     
-### Menjalankan di Heroku
+## Menjalankan di Heroku
 
 * Setiap saat anda ingin menjalankan aplikasi di Heroku, anda harus memiliki file `Procfile`. Silahkan lihat contoh file ini di direktori ini.
-* Anda juga perlu untuk menyediakan`requirements.txt`. Heroku akan mengunduh seluruh *dependancy* yang tertulis pada file ini. Cara mudah untuk membuat file ini adalah
+* Anda juga perlu untuk menyediakan`requirements.txt`. Heroku akan mengunduh seluruh *dependency* yang tertulis pada file ini. Cara mudah untuk membuat file ini adalah
 	`$ pip freeze > requirements.txt`
 * Heroku juga mengadakan method ```collectstatic``` dari `manage.py`. Sehingga anda perlu mengubah `settings.py` anda:
 
@@ -121,5 +149,5 @@ STATICFILES_DIRS = (
     
 * Terakhir, anda perlu menyediakan direktori dengan nama ```static``` di dalam direktori yang sama dengan  ```settings.py```. Karena git mengabaikan direktori kosong, anda dapat menambahkan file `.gitignore` kosong ke direktori ini.
 
-### Tautan ke git repository
+## Tautan ke git repository
 [django-hello](https://github.com/mrexmelle/django-hello)
